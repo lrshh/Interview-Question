@@ -25,9 +25,7 @@
 ### 1. Accuracy
 
 准确率，衡量样本中被准确预测的比率。当样本类别严重分配不均时，该评价指标不适用。
-$$
-Accuracy = \frac{True \small (positive) + True \small (negative)}{True\small (positive) + True\small (negative) + False\small (positive) + False\small (negative)}
-$$
+<img src="https://latex.codecogs.com/svg.image?Accuracy&space;=&space;\frac{True&space;\small&space;(positive)&space;&plus;&space;True&space;\small&space;(negative)}{True\small&space;(positive)&space;&plus;&space;True\small&space;(negative)&space;&plus;&space;False\small&space;(positive)&space;&plus;&space;False\small&space;(negative)}" title="Accuracy = \frac{True \small (positive) + True \small (negative)}{True\small (positive) + True\small (negative) + False\small (positive) + False\small (negative)}" />
 
 ### 2. Precision
 
