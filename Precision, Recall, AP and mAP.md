@@ -25,12 +25,15 @@
 ### 1. Accuracy
 
 准确率，衡量样本中被准确预测的比率。当样本类别严重分配不均时，该评价指标不适用。
+
 <img src="https://latex.codecogs.com/svg.image?Accuracy&space;=&space;\frac{True&space;\small&space;(positive)&space;&plus;&space;True&space;\small&space;(negative)}{True\small&space;(positive)&space;&plus;&space;True\small&space;(negative)&space;&plus;&space;False\small&space;(positive)&space;&plus;&space;False\small&space;(negative)}" title="Accuracy = \frac{True \small (positive) + True \small (negative)}{True\small (positive) + True\small (negative) + False\small (positive) + False\small (negative)}" />
 
 ### 2. Precision
 
 精确率，查准率，表示在所有预测为positive（真实labels包含positive和negative）的样本中，正确预测的比率。
+
 <img src="https://latex.codecogs.com/svg.image?Precision&space;=&space;\frac{True&space;\small&space;(positive)}{True\small&space;(positive)&space;&plus;&space;False\small&space;(positive)}" title="Precision = \frac{True \small (positive)}{True\small (positive) + False\small (positive)}" />
+
 当模型将真正的positive预测错误，模型本身只有很少部分是positive（会增加将negative错误预测成positive的风险，False positive），Precision值较小；
 
 当模型正确预测出很多positive（True Positive），或者尽量不把negative预测成positive时（False negative），precision值较大。
@@ -40,7 +43,9 @@ precision意义在于当模型预测出positive时的可信程度。目标在于
 ### 3. Recall
 
 查全率，召回率，表示正确预测的positive的个数占所有positive个数的比率，衡量模型检测出positive样本的能力，当recall值越大，模型检测出positive的个数越多。
+
 <img src="https://latex.codecogs.com/svg.image?Recall&space;=&space;\frac{True&space;\small&space;(positive)}{True\small&space;(positive)&space;&plus;&space;False\small&space;(negative)}" title="Recall = \frac{True \small (positive)}{True\small (positive) + False\small (negative)}" />
+
 recall只关心positive样本的分类结果，与negative样本的分类结果无关，因此，计算recall时，negative样本的分类结果可以完全忽略。
 
 ### 4. Precision-Recall Curve
